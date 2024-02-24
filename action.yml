@@ -1,0 +1,29 @@
+name: Cache Go Modules
+description: "Cache Go Modules compatible with Namespace Lab's runners"
+inputs:
+  namespacelabs:
+    default: "true"
+    description: "Using Namespace Lab's runners"
+branding:
+  color: blue
+  icon: archive
+runs:
+  using: "composite"
+  steps:
+    # NAMESPACE LAB VERSION
+    - name: Cache Go Modules
+      uses: namespacelabs/nscloud-cache-action@v1
+      with:
+        path: ~/go/pkg/mod
+      if: inputs.namespacelabs == 'true'
+
+    # NATIVE VERSION
+    - name: Cache Go Modules
+      uses: actions/cache@v3
+      with:
+        path: |
+          ~/go/pkg/mod
+        key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+        restore-keys: |
+          ${{ runner.os }}-go-
+      if: inputs.namespacelabs == 'false'
