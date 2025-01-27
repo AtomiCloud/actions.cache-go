@@ -2,13 +2,13 @@ name: Cache Go Modules
 description: "Cache Go Modules compatible with Namespace Lab's runners"
 inputs:
   namespacelabs:
-    default: "true"
+    default: 'true'
     description: "Using Namespace Lab's runners"
 branding:
   color: blue
   icon: archive
 runs:
-  using: "composite"
+  using: 'composite'
   steps:
     # NAMESPACE LAB VERSION
     - name: Cache Go Modules
