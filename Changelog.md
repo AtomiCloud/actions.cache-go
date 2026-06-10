@@ -1,3 +1,11 @@
+## [2.0.0](https://github.com/AtomiCloud/actions.cache-go/compare/v1.1.0...v2.0.0) (2026-06-10)
+
+
+### ✨ Features ✨
+
+* **breaking:** release new major for upgraded sub-actions ([4df51d6](https://github.com/AtomiCloud/actions.cache-go/commit/4df51d6f9e42671e44e9bc095dbe500e5bf7e770))
+* upgrade sub-actions to latest versions ([d18c1b6](https://github.com/AtomiCloud/actions.cache-go/commit/d18c1b6c871aa4b6c34746dddc2606a87d7a7bb1))
+
 ## [1.1.0](https://github.com/AtomiCloud/actions.cache-go/compare/v1.0.1...v1.1.0) (2025-01-27)
 
 
