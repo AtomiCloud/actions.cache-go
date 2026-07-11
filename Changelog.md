@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/AtomiCloud/actions.cache-go/compare/v2.0.0...v2.0.1) (2026-07-11)
+
+
+### 🐛 Bug Fixes 🐛
+
+* bump setup-nix to v3 ([9f14e3a](https://github.com/AtomiCloud/actions.cache-go/commit/9f14e3a0ecc40186b1eb8424bc4528bed380c42f))
+
 ## [2.0.0](https://github.com/AtomiCloud/actions.cache-go/compare/v1.1.0...v2.0.0) (2026-06-10)
 
 
